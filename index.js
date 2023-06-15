@@ -49,4 +49,77 @@ let selected = null; // null
 
 console.log('-------------------->',a,number,isdone,un,selected)
 
+// Dynamic Typing...
+console.log(typeof a)
+
+a = 4.3
+console.log(typeof a)
+
+console.log(typeof un)
+
+console.log(typeof isdone)
+
+console.log(typeof selected)
+
+
+
+// Reference Types.........( Objects, array Functions)
+//object ...
+let person = {
+    name:"Bala Krishna Baddi",
+    age : 25
+};
+
+//change name of the object..
+person.name = "John";
+person['name'] =  "Bala Krishna Baddi"
+
+let field = 'name';
+person[field] = 'Rama Rao'
+
+console.log(person)
+
+
+// Arrays...
+let colors = ['red','yellow']
+console.log(colors)
+
+colors[2] = 'black'
+
+//access array elements...
+console.log(colors[1])
+console.log(colors)
+
+console.log(colors.length)
+
+//Functions..
+
+function greet() {
+    console.log("Hello world");
+}
+
+greet();
+
+
+function greet(name,age) {
+    console.log("Hello world"+ " "+name,age);
+    console.log(typeof name, typeof age)
+}
+
+greet("Bala"); //sendin
+greet("Baddi","23");
+
+
+//calculate value withy functions...
+function bmi(age,height,weight){
+    console.log('you BMI is : ' + (age*height)/weight)
+}
+bmi(25,165,60);
+
+
+
+
+
+
+
 
