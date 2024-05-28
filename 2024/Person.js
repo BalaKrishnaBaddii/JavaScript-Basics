@@ -1,4 +1,6 @@
 import { Dog } from "./Dog.js";
+import ironman from "../ironman.js";
+// import Dog from "./Dog";
 // Person..
 class Person extends Dog {
   constructor(animal, name) {
@@ -18,3 +20,7 @@ class Person extends Dog {
 const p = new Person("Kukka", "Balu");
 p.work();
 p.sound();
+
+//iron man..
+const i = new ironman("balu");
+i.fly();
